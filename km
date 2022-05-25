@@ -1,1 +1,18 @@
+import java.time.*;
+
+public class Main {
+    public static void main(String[] args){
+        LocalDate localDate = LocalDate.of(2004,04,27);
+       System.out.println(localDate);
+        LocalDate localDate1 = LocalDate.of(2044,04,27);
+
+        Period periodY = Period.ofYears(5);
+
+        while (localDate .isBefore(localDate1)) {
+            localDate =localDate
+                        .plus(periodY);
+            System.out.println("С юбилеем!");
+        }
+    }
+}
 
